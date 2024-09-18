@@ -1,0 +1,20 @@
+1.Initialize Sets and Board:
+oCreate sets to track columns and diagonals that are occupied by queens.
+oInitialize an empty list to store solutions.
+oCreate a chessboard filled with dots (".").
+2.Define Backtracking Function:
+oCreate a function to place queens row by row.
+3.Check for Solution:
+oIf all rows are filled, add the current board configuration to the solutions list.
+4.Place Queens:
+oFor each column in the current row, check if placing a queen is safe (not in the same column or diagonal).
+5.Update Sets and Board:
+oIf safe, place the queen, update the sets, and move to the next row.
+6.Recursive Call:
+oCall the backtracking function for the next row.
+7.Backtrack:
+oRemove the queen and update the sets to try the next column.
+8.Start Backtracking:
+oBegin the process from the first row.
+9.Return Solutions:
+oReturn the list of all valid board configurations.
