@@ -1,0 +1,20 @@
+1. Initialize a set visited to keep track of explored states.
+2. Define a recursive function water_jug_dfs that takes:
+    		- jug1_capacity and jug2_capacity: capacities of the two jugs.
+    		- target: target amount to reach.
+    		- jug1 and jug2: current amounts in the jugs (initially 0).
+    		- visited: set of explored states.
+3. Check if the target is reached (jug1 == target or jug2 == target):
+    		- Print the solution and return True.
+4. Check if the current state is already explored ((jug1, jug2) in visited):
+    		- Return False to avoid infinite loops.
+5. Mark the current state as explored (visited.add((jug1, jug2))).
+6. Try all possible moves:
+    		- Fill Jug1.
+    		- Fill Jug2.
+    		- Empty Jug1.
+    		- Empty Jug2.
+    		- Pour Jug1 to Jug2.
+    		- Pour Jug2 to Jug1.
+7. Recursively call water_jug_dfs for each move.	
+8. Return True if any recursive call returns True.
